@@ -47,3 +47,19 @@ function hotelCost(daysNo){
     }
 }
 console.log(hotelCost(50))
+
+
+
+//fourth problem
+var array1 = ['swap','mondol']
+function megaFriend(arr){
+   if(arr==''){
+       console.log('sorry')
+   }
+   else{
+    for(i=0; i<array1.length; i++){
+        console.log(array1[i])
+    }
+   }
+}
+megaFriend(array1)
