@@ -1,34 +1,31 @@
 //https://github.com/Swapno5896/Assainment-3
-
+var ErrorMessage = "Invaid Input.You can't enter 0 or negetive value. Please check and try again";
+// first problem
 function kilometerToMeter(kiloMeter){
     if(kiloMeter<=0){
-        console.log("Invaid Sintax.You can't enter 0 or negetive value");
+        return(ErrorMessage);
     }
     else{
-        return kiloMeter * 1000
+        return kiloMeter * 1000;
     }
 }
-var a =kilometerToMeter(-4)
-console.log(a)
+
 
 
 
 //second problem
-function budgeCalculator(wathNo,phnNo,LaptopNo){
-    if(wathNo>0 && phnNo>0 && LaptopNo>0){
-        return (wathNo*50) + (phnNo*100) + (LaptopNo *500)
-
+function budgetCalculator(watchNo,phnNo,LaptopNo){
+    if(watchNo>0 && phnNo>0 && LaptopNo>0){
+        return (watchNo*50) + (phnNo*100) + (LaptopNo *500)
     }
     else{
-        console.log('Soorry, your can pass 0 , negetive or string value. Please check and try again');
+        return(ErrorMessage);
     }
 }
 
-console.log(budgeCalculator('p',1,1))
 
 
 //third problem
-
 function hotelCost(daysNo){
     if(daysNo>0){
         if(daysNo<=10){
@@ -42,27 +39,32 @@ function hotelCost(daysNo){
         }
     }
     else{
-        console.log('you can not pass 0 negetive or string')
+        return(ErrorMessage);
     }
 }
-console.log(hotelCost(-50))
 
 
 
 //fourth problem
-var array = ['swap','mon','aaaaa']
-function megaFriend(arr){
-   if(arr==''){
-       console.log('sorry')
+function megaFriend(array){
+   if(array==''){
+       console.log("Invalid input. Please enter valid array")
    }
    else{
+    var biggestName =array[0];
     for(i=0; i<array.length; i++){
-        var biggest =array[0];
-        if(array[i].length>biggest.length){
-            biggest = array[i]
+        var itemlenth = array[i].length//potita element ar length store korbe
+        var biggestNameNO = biggestName.length//boro nam ar lenght
+        if(biggestNameNO<itemlenth){
+        biggestName = array[i]
+
         }
+      }
+    console.log(biggestName)
     }
-   }
-   console.log(biggest)
 }
-megaFriend(array)
+
+
+
+
+
