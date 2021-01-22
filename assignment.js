@@ -2,11 +2,11 @@
 
 function kilometerToMeter(kiloMeter){
     if(kiloMeter<=0){
-        console.log("you can't enter 0 or negetive value");
+        console.log(
+            "Invaid Sintax.You can't enter 0 or negetive value");
     }
     else{
         return kiloMeter * 1000
-
     }
 }
 var a =kilometerToMeter(-4)
@@ -36,10 +36,10 @@ function hotelCost(daysNo){
             return daysNo*100
         }
         if(daysNo<=20){
-            return (10*100) + [(daysNo-10)*80]
+            return (10*100) + [(daysNo-10)*80]// days-10 = 10 din ar porer din sonka
         }
         if(daysNo>20){
-            return (10*100) + (10*80) + (daysNo-20)*50
+            return (10*100) + (10*80) + (daysNo-20)*50// days-10 = 10 din ar porer din sonka, days-20 =20 din ar porer din shonka
         }
     }
     else{
@@ -51,15 +51,19 @@ console.log(hotelCost(50))
 
 
 //fourth problem
-var array1 = ['swap','mondol']
+var array = ['swap','mon','aaaaa']
 function megaFriend(arr){
    if(arr==''){
        console.log('sorry')
    }
    else{
-    for(i=0; i<array1.length; i++){
-        console.log(array1[i])
+    for(i=0; i<array.length; i++){
+        var biggest =array[0];
+        if(array[i].length>biggest.length){
+            biggest = array[i]
+        }
     }
    }
+   console.log(biggest)
 }
-megaFriend(array1)
+megaFriend(array)
