@@ -60,7 +60,7 @@ function megaFriend(array){
 
         }
       }
-    console.log(biggestName)
+    return(biggestName);
     }
 }
 
