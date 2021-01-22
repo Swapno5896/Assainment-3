@@ -48,7 +48,7 @@ function hotelCost(daysNo){
 //fourth problem
 function megaFriend(array){
    if(array==''){
-       return("Invalid input. Please enter valid array")
+       return("Invalid input. Please enter valid array");
    }
    else{
     var biggestName =array[0];
