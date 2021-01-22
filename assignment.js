@@ -2,8 +2,7 @@
 
 function kilometerToMeter(kiloMeter){
     if(kiloMeter<=0){
-        console.log(
-            "Invaid Sintax.You can't enter 0 or negetive value");
+        console.log("Invaid Sintax.You can't enter 0 or negetive value");
     }
     else{
         return kiloMeter * 1000
@@ -35,10 +34,10 @@ function hotelCost(daysNo){
         if(daysNo<=10){
             return daysNo*100
         }
-        if(daysNo<=20){
+        else if(daysNo<=20){
             return (10*100) + [(daysNo-10)*80]// days-10 = 10 din ar porer din sonka
         }
-        if(daysNo>20){
+        else if(daysNo>20){
             return (10*100) + (10*80) + (daysNo-20)*50// days-10 = 10 din ar porer din sonka, days-20 =20 din ar porer din shonka
         }
     }
@@ -46,7 +45,7 @@ function hotelCost(daysNo){
         console.log('you can not pass 0 negetive or string')
     }
 }
-console.log(hotelCost(50))
+console.log(hotelCost(-50))
 
 
 
